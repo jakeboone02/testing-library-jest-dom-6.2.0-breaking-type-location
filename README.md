@@ -11,3 +11,9 @@ yarn install
 ```
 
 Look at the `index.ts` file, the matcher doesn't exist and I can't find it accessible anywhere. Switch to version `~6.1.0`. Importing `TestingLibraryMatchers` works correctly and extending expect correctly.
+
+I think the solution is to just export:
+
+export { TestingLibraryMatchers };
+
+in `matchers-standalone-d.ts`.
