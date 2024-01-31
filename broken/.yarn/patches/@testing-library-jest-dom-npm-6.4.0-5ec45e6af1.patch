@@ -1,0 +1,22 @@
+diff --git a/types/matchers-standalone.d.ts b/types/matchers-standalone.d.ts
+index b8dea836febd6b593cedc6303ad3f11e252cbef5..e6ec950fe4561e4f5c16ddd159c19160c537a1eb 100644
+--- a/types/matchers-standalone.d.ts
++++ b/types/matchers-standalone.d.ts
+@@ -1,6 +1,6 @@
+-import {type TestingLibraryMatchers} from './matchers'
++import {type TestingLibraryMatchers as _TLM} from './matchers'
+ 
+-type TLM = TestingLibraryMatchers<any, void>
++type TLM = _TLM<any, void>
+ 
+ interface MatcherReturnType {
+   pass: boolean
+@@ -23,6 +23,8 @@ declare namespace matchersStandalone {
+       ...rest: Parameters<TLM[T]>
+     ) => MatcherReturnType
+   } & OverloadedMatchers
++
++  type TestingLibraryMatchers<E, R> = _TLM<E, R>
+ }
+ 
+ declare const matchersStandalone: matchersStandalone.MatchersStandalone &

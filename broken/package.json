@@ -11,7 +11,7 @@
   "license": "ISC",
   "packageManager": "yarn@4.1.0",
   "dependencies": {
-    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/jest-dom": "patch:@testing-library/jest-dom@npm%3A6.4.0#~/.yarn/patches/@testing-library-jest-dom-npm-6.4.0-5ec45e6af1.patch",
     "expect": "^29.7.0",
     "typescript": "^5.3.3"
   }

@@ -88,7 +88,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.4.0":
+"@testing-library/jest-dom@npm:6.4.0":
   version: 6.4.0
   resolution: "@testing-library/jest-dom@npm:6.4.0"
   dependencies:
@@ -118,6 +118,39 @@ __metadata:
     vitest:
       optional: true
   checksum: 10c0/6b7eba9ca388986a721fb12f84adf0f5534bf7ec5851982023a889c4a0afac6e9e91291bdac39e1f59a05adefd7727e30463d98b21c3da32fbfec229ccb11ef1
+  languageName: node
+  linkType: hard
+
+"@testing-library/jest-dom@patch:@testing-library/jest-dom@npm%3A6.4.0#~/.yarn/patches/@testing-library-jest-dom-npm-6.4.0-5ec45e6af1.patch":
+  version: 6.4.0
+  resolution: "@testing-library/jest-dom@patch:@testing-library/jest-dom@npm%3A6.4.0#~/.yarn/patches/@testing-library-jest-dom-npm-6.4.0-5ec45e6af1.patch::version=6.4.0&hash=f45b6f"
+  dependencies:
+    "@adobe/css-tools": "npm:^4.3.2"
+    "@babel/runtime": "npm:^7.9.2"
+    aria-query: "npm:^5.0.0"
+    chalk: "npm:^3.0.0"
+    css.escape: "npm:^1.5.1"
+    dom-accessibility-api: "npm:^0.6.3"
+    lodash: "npm:^4.17.15"
+    redent: "npm:^3.0.0"
+  peerDependencies:
+    "@jest/globals": ">= 28"
+    "@types/bun": "*"
+    "@types/jest": ">= 28"
+    jest: ">= 28"
+    vitest: ">= 0.32"
+  peerDependenciesMeta:
+    "@jest/globals":
+      optional: true
+    "@types/bun":
+      optional: true
+    "@types/jest":
+      optional: true
+    jest:
+      optional: true
+    vitest:
+      optional: true
+  checksum: 10c0/af3344b2cfba4c38259904bee69922f95f697e2fcbd8525b7ced4837ce8ba8eabc6754113b6808bb49bffcf9bf21062539c1a9199c296a41edd12f45c5a5e6a2
   languageName: node
   linkType: hard
 
@@ -572,7 +605,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "testing-library-jest-dom-6.2.0-breaking-type-location@workspace:."
   dependencies:
-    "@testing-library/jest-dom": "npm:^6.4.0"
+    "@testing-library/jest-dom": "patch:@testing-library/jest-dom@npm%3A6.4.0#~/.yarn/patches/@testing-library-jest-dom-npm-6.4.0-5ec45e6af1.patch"
     expect: "npm:^29.7.0"
     typescript: "npm:^5.3.3"
   languageName: unknown
